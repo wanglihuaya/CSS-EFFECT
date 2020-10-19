@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>test</title>
+  <style>
+    .con {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .line {
+      border-right: 5px solid #000;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 28em;
+      animation: broders 0.8s infinite normal,
+        widths 5s steps(6) infinite;
+      font-family: ;
+      font-size: 60px;
+    }
+
+    @keyframes broders {
+      from {
+        border-right-color: #000;
+      }
+
+      to {
+        border-right-color: transparent;
+      }
+
+    }
+
+    @keyframes widths {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <p class="line">
+      sdfsdf
+    </p>
+  </div>
+</body>
+
+</html>
